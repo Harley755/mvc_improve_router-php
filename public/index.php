@@ -5,6 +5,7 @@ use Router\Router;
 
 require "../vendor/autoload.php";
 
+define('BASE_VIEW_PATH', dirname(__DIR__) . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR);
 
 $router = new Router();
 
@@ -21,7 +22,7 @@ $router->register('/', ['Controllers\HomeController', 'index']);
 
 try {
     $router->resolve($_SERVER["REQUEST_URI"]);
-    var_dump($router->resolve($_SERVER["REQUEST_URI"]));
+    echo $router->resolve($_SERVER["REQUEST_URI"]);
 } catch (\Throwable $e) {
     echo $e->getMessage();
 }
