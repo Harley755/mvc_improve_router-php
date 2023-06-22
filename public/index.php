@@ -1,7 +1,8 @@
 <?php
 
-use Controllers\HomeController;
+use Source\App;
 use Router\Router;
+use Controllers\HomeController;
 
 require "../vendor/autoload.php";
 
@@ -11,18 +12,5 @@ $router = new Router();
 
 $router->register('/', ['Controllers\HomeController', 'index']);
 
-// $router->register('/contact', function () {
-//     return 'Contact Page';
-// });
 
-// echo '<pre>';
-// var_dump($router);
-// echo '<pre/>';
-
-
-try {
-    $router->resolve($_SERVER["REQUEST_URI"]);
-    echo $router->resolve($_SERVER["REQUEST_URI"]);
-} catch (\Throwable $e) {
-    echo $e->getMessage();
-}
+(new App($router, $_SERVER["REQUEST_URI"]))->run();

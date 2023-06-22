@@ -8,7 +8,8 @@
             "Router\\" : "Router/",
             "Exceptions\\" : "Exceptions/",
             "Controllers\\" : "Controllers/",
-            "Source\\" : "src/"
+            "Source\\" : "src/",
+            "Models\\" : "Models/"
         }
     }
 }
