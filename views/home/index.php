@@ -10,6 +10,13 @@
 <body>
     <h1>Home page bro !</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet molestias in quas eos eius assumenda? Est saepe, illum repudiandae laborum assumenda rerum facilis quaerat voluptatum recusandae corporis corrupti minima.</p>
+
+    <ul>
+
+        <?php foreach ($users as $user) : ?>
+            <li><?= $user->email ?></li>
+        <?php endforeach ?>
+    </ul>
 </body>
 
 </html>

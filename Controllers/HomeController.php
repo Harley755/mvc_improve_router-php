@@ -12,8 +12,6 @@ class HomeController
         $userModel = new User();
         $users = $userModel->all();
 
-        var_dump($users);
-
-        return Renderer::make('home/index');
+        return Renderer::make('home/index', compact('users'));
     }
 }
