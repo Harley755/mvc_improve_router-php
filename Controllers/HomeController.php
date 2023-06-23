@@ -10,12 +10,10 @@ class HomeController
     public function index(): Renderer
     {
         $userModel = new User();
-        $statement = $userModel->getPDO()->query('SELECT * FROM users');
+        $users = $userModel->all();
 
-        foreach ($statement as $key => $user) {
-            var_dump($user);
-            echo '<br/>';
-        }
+        var_dump($users);
+
         return Renderer::make('home/index');
     }
 }
