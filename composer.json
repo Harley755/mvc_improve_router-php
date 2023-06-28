@@ -9,7 +9,8 @@
             "Exceptions\\" : "Exceptions/",
             "Controllers\\" : "Controllers/",
             "Source\\" : "src/",
-            "Models\\" : "Models/"
+            "Models\\" : "Models/",
+            "Tests\\" : "tests/"
         }
     },
     "require-dev": {

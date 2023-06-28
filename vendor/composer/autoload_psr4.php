@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Tests\\' => array($baseDir . '/tests'),
     'Source\\' => array($baseDir . '/src'),
     'Router\\' => array($baseDir . '/Router'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),

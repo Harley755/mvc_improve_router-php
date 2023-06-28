@@ -6,11 +6,16 @@ use Exceptions\RouteNotFoundException;
 
 class Router
 {
-    private array $routes;
+    private array $routes = [];
 
     public function register(string $path, callable|array $action)
     {
         $this->routes[$path] = $action;
+    }
+
+    public function getRoutes(): array
+    {
+        return $this->routes;
     }
 
     public function resolve(string $uri): mixed

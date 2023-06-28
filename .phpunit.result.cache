@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Unit\\RouterTest::it_registers_routes":7,"Tests\\Unit\\RouterTest::it_doesnt_have_any_routes_before_registering_routes":5},"times":{"Tests\\Unit\\RouterTest::it_registers_routes":0.019,"Tests\\Unit\\RouterTest::it_doesnt_have_any_routes_before_registering_routes":0.001}}
